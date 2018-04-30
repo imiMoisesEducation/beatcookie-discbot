@@ -6,4 +6,9 @@ go get github.com/elastic/beats
 #if not, this
 mkdir -p ${GOPATH}/src/github.com/elastic
 git clone https://github.com/elastic/beats ${GOPATH}/src/elastic/beats
-homebrew install cookiecutter
+brew install python
+pip install python-dateutil
+pip install 
+
+python ${GOPATH}/src/elastic/beats/scripts/generate.py
+make setup

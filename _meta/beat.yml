@@ -1,0 +1,7 @@
+################### Beat-cookie-discbot Configuration Example #########################
+
+############################# Beat-cookie-discbot ######################################
+
+beat-cookie-discbot:
+  # Defines how often an event is sent to the output
+  period: 1s

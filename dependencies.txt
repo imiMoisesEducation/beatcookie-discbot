@@ -1,0 +1,9 @@
+#Go dependencies
+go get github.com/bwmarrin/discordgo
+
+#this
+go get github.com/elastic/beats
+#if not, this
+mkdir -p ${GOPATH}/src/github.com/elastic
+git clone https://github.com/elastic/beats ${GOPATH}/src/elastic/beats
+homebrew install cookiecutter

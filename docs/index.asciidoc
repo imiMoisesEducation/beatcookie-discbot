@@ -1,0 +1,5 @@
+= Beat-cookie-discbot Docs
+
+Welcome to the Beat-cookie-discbot documentation.
+
+

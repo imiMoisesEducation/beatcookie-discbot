@@ -11,7 +11,7 @@ import (
 	"github.com/imiMoisesEducation/beat-cookie-discbot/config"
 )
 
-type Beat-cookie-discbot struct {
+type Beatcookiediscbot struct {
 	done   chan struct{}
 	config config.Config
 	client beat.Client
@@ -24,14 +24,14 @@ func New(b *beat.Beat, cfg *common.Config) (beat.Beater, error) {
 		return nil, fmt.Errorf("Error reading config file: %v", err)
 	}
 
-	bt := &Beat-cookie-discbot{
+	bt := &Beatcookiediscbot{
 		done:   make(chan struct{}),
 		config: c,
 	}
 	return bt, nil
 }
 
-func (bt *Beat-cookie-discbot) Run(b *beat.Beat) error {
+func (bt *Beatcookiediscbot) Run(b *beat.Beat) error {
 	logp.Info("beat-cookie-discbot is running! Hit CTRL-C to stop it.")
 
 	var err error
@@ -62,7 +62,7 @@ func (bt *Beat-cookie-discbot) Run(b *beat.Beat) error {
 	}
 }
 
-func (bt *Beat-cookie-discbot) Stop() {
+func (bt *Beatcookiediscbot) Stop() {
 	bt.client.Close()
 	close(bt.done)
 }

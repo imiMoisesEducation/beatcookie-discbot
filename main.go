@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	_ "github.com/imiMoisesEducation/beat-cookie-discbot/cmd"
+	cmd "github.com/imiMoisesEducation/beat-cookie-discbot/cmd"
 )
 
 func main() {

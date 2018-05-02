@@ -6,9 +6,11 @@ package config
 import "time"
 
 type Config struct {
-	Period time.Duration `config:"period"`
+	Period       time.Duration `config:"period"`
+	DiscordToken string        `config:"discordToken"`
 }
 
 var DefaultConfig = Config{
-	Period: 1 * time.Second,
+	Period:       1 * time.Second,
+	DiscordToken: "",
 }

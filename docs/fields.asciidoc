@@ -148,6 +148,145 @@ PLEASE UPDATE DOCUMENTATION
 
 --
 
+*`attatchmentCount`*::
++
+--
+type: long
+
+number or files attatched
+
+
+--
+
+*`authorID`*::
++
+--
+type: keyword
+
+the author's ID
+
+
+--
+
+*`channelID`*::
++
+--
+type: keyword
+
+the channel's ID
+
+
+--
+
+*`content`*::
++
+--
+type: text
+
+the message's content
+
+
+--
+
+*`embedsCount`*::
++
+--
+type: long
+
+count of embeds
+
+
+--
+
+*`messageID`*::
++
+--
+type: keyword
+
+message's ID
+
+
+--
+
+*`didMentionEveryone`*::
++
+--
+type: boolean
+
+true if messages contains an "everyone"
+
+
+--
+
+*`mentionRoles`*::
++
+--
+type: keyword
+
+when a role is mentioned
+
+
+--
+
+*`mentionsCount`*::
++
+--
+type: long
+
+count of mentions in a message
+
+
+--
+
+*`mentions`*::
++
+--
+type: keyword
+
+all mentions in the message
+
+
+--
+
+*`reactions.count`*::
++
+--
+type: long
+
+count of a certain reaction
+
+
+--
+
+*`reactions.emojiID`*::
++
+--
+type: keyword
+
+id of used emoji
+
+
+--
+
+*`reactions.emojiName`*::
++
+--
+type: keyword
+
+name of used emoji
+
+
+--
+
+*`type`*::
++
+--
+type: object
+
+message type
+
+--
+
 [[exported-fields-cloud]]
 == Cloud provider metadata fields
 

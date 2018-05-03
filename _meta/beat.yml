@@ -5,3 +5,5 @@
 beat-cookie-discbot:
   # Defines how often an event is sent to the output
   period: 1s
+  discordToken: "<Insert token here>"
+  analisisPermisionRoleID: "<Permision for analisis roleID here>"

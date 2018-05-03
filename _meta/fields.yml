@@ -7,3 +7,59 @@
       required: true
       description: >
         PLEASE UPDATE DOCUMENTATION
+    - name: attatchmentCount
+      type: long
+      description: >
+        number or files attatched
+    - name: authorID
+      type: keyword
+      description: >
+        the author's ID
+    - name: channelID
+      type: keyword
+      description: >
+        the channel's ID
+    - name: content
+      type: text
+      description: >
+        the message's content
+    - name: embedsCount
+      type: long
+      description: >
+        count of embeds
+    - name: messageID
+      type: keyword
+      description: >
+        message's ID
+    - name: didMentionEveryone
+      type: boolean
+      description: >
+        true if messages contains an "everyone"
+    - name: mentionRoles
+      type: keyword
+      description: >
+        when a role is mentioned
+    - name: mentionsCount
+      type: long
+      description: >
+        count of mentions in a message
+    - name: mentions
+      type: keyword
+      description: >
+        all mentions in the message
+    - name: reactions.count
+      type: long
+      description: >
+        count of a certain reaction
+    - name: reactions.emojiID
+      type: keyword
+      description: >
+        id of used emoji
+    - name: reactions.emojiName
+      type: keyword
+      description: >
+        name of used emoji
+    - name: type
+      type: object
+      description:
+        message type
